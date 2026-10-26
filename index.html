@@ -10,6 +10,7 @@
 <meta property="og:type" content="website"><meta property="og:image" content="/assets/jonathan-lu.jpg">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css">
+<script src="/slideshow.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -18,19 +19,38 @@
 <nav aria-label="Main navigation"><a href="#purpose">Purpose</a><a href="#work">Work</a><a class="nav-contact" href="#connect">Let’s connect <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main id="main">
-<section class="hero wrap" id="home" aria-labelledby="hero-title">
+<section class="hero splash" id="home" aria-labelledby="hero-title">
+<div class="hero-slideshow" aria-label="Photos of Jonathan Lu" aria-roledescription="carousel">
+<div class="hero-scene is-active" data-label="Health & well-being" role="group" aria-roledescription="slide" aria-label="1 of 5: Health & well-being" aria-hidden="false"><img src="/assets/wellness.jpg" alt="Jonathan Lu smiling with his arms folded in a gym" style="object-position:50% 29%" fetchpriority="high"></div>
+<div class="hero-scene" data-label="A lifelong learner" role="group" aria-roledescription="slide" aria-label="2 of 5: A lifelong learner" aria-hidden="true"><img data-src="/assets/academic.jpg" alt="Jonathan Lu in doctoral regalia holding his Arizona State University diploma" style="object-position:50% 24%" decoding="async"></div>
+<div class="hero-scene" data-label="Service in the field" role="group" aria-roledescription="slide" aria-label="3 of 5: Service in the field" aria-hidden="true"><img data-src="/assets/field.jpg" alt="Jonathan Lu in military field uniform and helmet" style="object-position:50% 24%" decoding="async"></div>
+<div class="hero-scene" data-label="Serving the community" role="group" aria-roledescription="slide" aria-label="4 of 5: Serving the community" aria-hidden="true"><img data-src="/assets/firefighter.jpg" alt="Jonathan Lu seated on stairs in firefighter turnout gear" style="object-position:50% 30%" decoding="async"></div>
+<div class="hero-scene" data-label="A foundation of service" role="group" aria-roledescription="slide" aria-label="5 of 5: A foundation of service" aria-hidden="true"><img data-src="/assets/uniform.jpg" alt="Jonathan Lu wearing his Army dress uniform and beret" style="object-position:50% 20%" decoding="async"></div>
+</div>
+<div class="hero-shade" aria-hidden="true"></div>
+<div class="wrap hero-content">
 <div class="hero-copy">
 <p class="eyebrow"><span class="small-line"></span> MEDIC. ACADEMIC. ENTREPRENEUR.</p>
 <h1 id="hero-title">A life in service.<br>A mind for<br><em>what’s possible.</em></h1>
 <p class="hero-intro">I’m Dr. Jonathan Lu. I connect people, ideas, and opportunity at the intersection of healthcare, science, and business.</p>
 <p class="hero-note">To alleviate suffering. To expand opportunity.<br>To help people reach their potential.</p>
-<a class="button" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+<a class="button button-light" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
 </div>
-<figure class="portrait">
-<div class="portrait-frame"><img src="/assets/jonathan-lu.jpg" width="802" height="1122" alt="Dr. Jonathan Lu smiling in a navy suit and blue tie" fetchpriority="high"></div>
-<figcaption><span>DR. JONATHAN LU</span><span>Rooted in service. Looking ahead.</span></figcaption>
-</figure>
-<div class="hero-footer"><span>HEALTHCARE <i aria-hidden="true">/</i> SCIENCE <i aria-hidden="true">/</i> BUSINESS</span><a href="#purpose">Discover the thread <span aria-hidden="true">↓</span></a></div>
+</div>
+<div class="hero-controls wrap">
+<div class="hero-caption"><span class="eyebrow">ROOTED IN SERVICE. LOOKING AHEAD.</span><span id="hero-scene-label">Health & well-being</span></div>
+<div class="slide-actions" hidden>
+<span class="slide-count" aria-hidden="true">01 / 05</span>
+<div class="slide-selectors" role="group" aria-label="Choose a photo">
+<button type="button" aria-label="Show photo 1: Health & well-being" aria-pressed="true" data-slide="0"></button>
+<button type="button" aria-label="Show photo 2: A lifelong learner" aria-pressed="false" data-slide="1"></button>
+<button type="button" aria-label="Show photo 3: Service in the field" aria-pressed="false" data-slide="2"></button>
+<button type="button" aria-label="Show photo 4: Serving the community" aria-pressed="false" data-slide="3"></button>
+<button type="button" aria-label="Show photo 5: A foundation of service" aria-pressed="false" data-slide="4"></button>
+</div>
+<button id="slideshow-toggle" type="button">Pause slideshow</button>
+</div>
+</div>
 </section>
 <section class="purpose" id="purpose" aria-labelledby="purpose-title">
 <div class="wrap purpose-grid">
