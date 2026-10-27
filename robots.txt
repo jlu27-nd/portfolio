@@ -1,0 +1,6 @@
+# Public search and retrieval crawlers may access this site.
+# This preserves the previous unrestricted crawl policy.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.drjonlu.com/sitemap.xml
