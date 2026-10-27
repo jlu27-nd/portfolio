@@ -32,7 +32,7 @@ schedulePosition();
 function show(button){if(dismissed)return; const item=entries[Number(button.dataset.preview)]; if(!item)return;
 triggers.forEach(b=>b.setAttribute('aria-expanded',String(b===button)));
 active=button; place();
-img.src=item[0];img.alt=item[1];img.style.objectFit=[0,3].includes(Number(button.dataset.preview))?'contain':'';img.classList.toggle('is-screenshot',[2,7,8].includes(Number(button.dataset.preview)));
+img.src=item[0];img.alt=item[1];img.style.objectFit=Number(button.dataset.preview)===0?'contain':'';img.style.objectPosition=Number(button.dataset.preview)===3?'center 5%':'';img.classList.toggle('is-screenshot',[2,7,8].includes(Number(button.dataset.preview)));
 panel.querySelector('.preview-title').textContent=item[2];
 panel.querySelector('.preview-description').textContent=item[3];
 panel.querySelector('.preview-year').textContent=button.closest('.milestone').querySelector('.milestone-date').textContent;
